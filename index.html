@@ -1,210 +1,119 @@
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>{ leak.run }</title>
+    <meta name="description" content="A site where I have places you can contact me on">
+    <meta property="og:description" content="A site where I have places you can contact me on">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <style>
+        @import url("https://fonts.xz.style/serve/fira-code.css");
+    
+        :root {
+            --nc-font-sans: 'Fira Code', monospace;
+            --nc-font-mono: 'Fira Code', monospace;
+            --nc-tx-1: #FFFFFF;       /* White text */
+            --nc-tx-2: #DDDDDD;       /* Light gray text */
+            --nc-bg-1: #111111;       /* Dark background */
+            --nc-bg-2: #0A0A0A;       /* Slightly darker background */
+            --nc-bg-3: #000000;       /* Even darker background */
+            --nc-lk-1: #4A90E2;       /* Blue link */
+            --nc-lk-2: #E2E2E2;       /* Light gray link */
+            --nc-lk-tx: #FFFFFF;      /* White link text */
+            --nc-ac-1: #FF7F50;       /* Coral accent */
+            --nc-ac-tx: #FFFFFF;      /* White accent text */
+        }
+    </style>
+    
+    
+    <header style="padding-bottom: 10px !important">
+        <h1>
+          <div class="wrapper">
+            <h2 class="typer"></h2>
+            </div>  
+             <p>Leak</p>
+        </h1>
+        <nav>
+            <p>  </p>
+        </nav>
+    </header>
+
+    <blockquote><i>I am a malware en goodware Developer based in Turkey,
+        who has skills in languages: Python,JavaScript,C#,Html and Css.</i></blockquote>
+    
+    <h1></h1>
+
+ 
+    </details>
+
+    <br>
+
+    <h2 style="padding-bottom: 10px;">Contact</h2>
+
+    <table>
+        <tr>
+            <td style="border: 1px solid #554f4f"><strong>Username</strong></td>
+            <td style="border: 1px solid #554f4f"><strong>Platform</strong></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td><a href="https://discord.com/users/364492816639852544" rel="noreferrer" target="_blank">leak.run</a></td>
+            <td>Discord</td>
+            <tr>
+
+            </tr>
+            <td><a href="https://github.com/8oi" rel="noreferrer" target="_blank">8oi</a></td>
+            <td>Github</td>
+        </tr>
+
+        </tr>
+        
+    </table>
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <h2 style="padding-bottom: 10px;">Is This Your IP btw?</h2>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
   </head>
   <body>
+    <table border = 1 cellpadding = 5>
+      <tr>
+        <td>IP Address</td>
+        <td id = "ip"></td>
+      </tr>
+      <tr>
+        <td>ISP</td>
+        <td id = "isp"></td>
+      </tr>
+      <tr>
+        <td>Country</td>
+        <td id = "country"></td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td id = "city"></td>
+      </tr>
+      
+    <script type="text/javascript">
+        $.getJSON('https://ipapi.co/json/', function(data){
+          $("#ip").text(data.ip);
+          $('#isp').text(data.org);
+          $('#country').text(data.country_name);
+          $('#city').text(data.region);
+          $("#gmaps").attr("src", "https://www.google.com/maps?q="+data.latitude+","+data.longitude+"&output=embed");
+        })
+      </script>
 
-<pre style="margin-bottom: -16px;">
-<div class="blink">
-
-
-    ██▓    ▓█████ ▄▄▄       ██ ▄█▀   
-    ▓██▒    ▓█   ▀▒████▄     ██▄█▒    
-    ▒██░    ▒███  ▒██  ▀█▄  ▓███▄░    
-    ▒██░    ▒▓█  ▄░██▄▄▄▄██ ▓██ █▄    
-    ░██████▒░▒████▒▓█   ▓██▒▒██▒ █▄   
-    ░ ▒░▓  ░░░ ▒░ ░▒▒   ▓▒█░▒ ▒▒ ▓▒   
-    ░ ░ ▒  ░ ░ ░  ░ ▒   ▒▒ ░░ ░▒ ▒░   
-      ░ ░      ░    ░   ▒   ░ ░░ ░    
-        ░  ░   ░  ░     ░  ░░  ░      
-                                      
-    
-    
-</div>
-</pre>
-    <div id="content">
-                <span class="white">
-                    ---------------------------------  About Me  ----------------------------------------
-                    <p>I am a malware en goodware Developer based in Turkey,
-                        <br>
-                        who has skills in languages: Python,JavaScript,C#,Html and Css.
-                    </p>
-                </span>
-            </p>
-        </span>
-
-        <div id="text">
-
-	</div>
-            <span class="white">
-                   ---------------------------------  Contact  ----------------------------------------
-                    </span>
-                </p>
-            </span>
-        <div id="text">
-            Discord: <a href="https://discord.com/users/239117093952421888">l.eak</a>
-            <br>
-            Github: <a href="https://github.com/8oi">8oi</a>
-        </div>
-
-        </div>
-        <!-- To create a new Table copy from 001TO HERE! -->
-    </div>
-<pre class="hosted">{ leak.run }</pre>
-  </body>
-
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async defer src="https://api.newcss.net/latest.js"></script>
+    <noscript><img src="https://api.newcss.net/noscript.gif" alt=""></noscript>
+</body>
 </html>
-
-<style>
-
-:root {
-	--white: #ffffff;
-	--red: #ff0000;
-	--yellow: #f5ff98;
-	--blue: #0004ff;
-	--grey: #a9b1d6;
-
-	--background: #000;
-
-	--light-blue: #0004ff;
-	--hover-blue: #f77878;
-}
-
-.white {
-	color: var(--white)
-}
-
-.red {
-	color: var(--red)
-}
-
-.yellow {
-	color: var(--yellow)
-}
-
-.blue {
-	color: var(--blue);
-}
-
-body {
-    background-color: var(--background);
-    margin-top: 10px;
-  }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: var(--grey)
-}
-
-a:hover {
-    text-decoration: none;
-    color: var(--hover-blue)
-}
-
-#text {
-    text-align: left;
-    font-family: 'JetBrains Mono';
-    color: var(--light-blue);
-    display: block; 
-}
-
-#content {
-    text-align: center;
-    margin: 0 auto;
-    width: 609px;
-}
-
-#content span p {
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-p {
-    text-align: center;
-    font-family: 'JetBrains Mono';
-    color: var(--grey)
-}
-
-#text p {
-    padding-bottom: 5px;
-}
-
-pre {
-    font-family: 'JetBrains Mono';
-    color: var(--blue);
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-@font-face {
-    font-family: 'JetBrains Mono';
-    src: url("TopazPlus.ttf");
-}
-
-
-.blink {
-
-	-webkit-animation: flicker 3s infinite;
-}
-  
-@-webkit-keyframes flicker
-{
-  0% {opacity:0;}
-  9% {opacity:0;}
-  10% {opacity:.5;}
-  13% {opacity:0;}
-  20% {opacity:.5;}
-  25% {opacity:1;}
-}	
-/* To here */
-
-.hosted {
-	bottom:0px;
-	position: absolute;
-    bottom: 50;
-    width: 100%;
-    text-align: center;
-}
-
-@media screen and (max-width: 700px) {
-  pre {
-      font-size: 16px;
-  }
-    #content {
-        width: 400px;
-    }
-    
-    span {
-        font-size: 10.5px
-    }
-    #text p {
-        font-size: 12px
-    }
-}
-
-@media screen and (max-width: 411px) {
-  pre {
-      font-size: 11px;
-  }
-    #content {
-        width: 298px;
-    }
-    
-    span {
-        font-size: 7.8px
-    }
-    #text p {
-        font-size: 10px
-    }
-}
-
-</style>

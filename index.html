@@ -60,69 +60,43 @@
 
     <br>
 
-    <h2 style="padding-bottom: 10px;">Contact</h2>
+    <h2 style="padding-bottom: 10px;">About me</h2>
     <blockquote>
     <table>
-        <tr>
-          <td style="border: 1px solid #E2E2E2"><strong></strong>Username</strong></td>
-          <td style="border: 1px solid #E2E2E2"><strong>Platform</strong></td>
-        </tr>
-        <tr>
-        </tr>
-        
-        <tr>
-            <td><a href="https://discord.com/users/364492816639852544" rel="noreferrer" target="_blank">leakroot</a></td>
-            <td>Discord</td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/leakpy" rel="noreferrer" target="_blank">leakpy</a></td>
-          <td>Github</td>
-      </tr>
+  <p>I am a <s style="color: rgb(141, 0, 0);">Malware</s> / <b style="color: #858585;">Goodware</b> Developer 
+    <br>
+    <br>
+    who has skills in;
+    <i class="glow-skills" style="color:rgb(102, 102, 102);"> <br> Python, Html, Css, Javascript, C++ and C#</i>
+  </p>
         </tr>
       
         
     </table>
   </blockquote>
-    <!DOCTYPE html>
-<html lang="en" dir="ltr">
+  <h2 style="padding-bottom: 10px;">Contact</h2>
   <blockquote>
-  <head>
-    <meta charset="utf-8">
-    <h2 style="padding-bottom: 10px;">Is This Your IP btw?</h2>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
-  </head>
-  <body>
-    <table border = 1 cellpadding = 5>
+  <table>
       <tr>
-        <td>IP Address</td>
-        <td id = "ip"></td>
+        <td style="border: 1px solid #E2E2E2"><strong></strong>Username</strong></td>
+        <td style="border: 1px solid #E2E2E2"><strong>Platform</strong></td>
       </tr>
       <tr>
-        <td>ISP</td>
-        <td id = "isp"></td>
+      </tr>
+      
+      <tr>
+          <td><a href="https://discord.com/users/364492816639852544" rel="noreferrer" target="_blank">leakroot</a></td>
+          <td>Discord</td>
       </tr>
       <tr>
-        <td>Country</td>
-        <td id = "country"></td>
+        <td><a href="https://github.com/leakpy" rel="noreferrer" target="_blank">leakpy</a></td>
+        <td>Github</td>
+    </tr>
       </tr>
-      <tr>
-        <td>City</td>
-        <td id = "city"></td>
-      </tr>
-    </blockquote>
-    <script type="text/javascript">
-        $.getJSON('https://ipapi.co/json/', function(data){
-          $("#ip").text(data.ip);
-          $('#isp').text(data.org);
-          $('#country').text(data.country_name);
-          $('#city').text(data.region);
-          $("#gmaps").attr("src", "https://www.google.com/maps?q="+data.latitude+","+data.longitude+"&output=embed");
-        })
-      </script>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async defer src="https://api.newcss.net/latest.js"></script>
-    <noscript><img src="https://api.newcss.net/noscript.gif" alt=""></noscript>
+    
+      
+  </table>
+</blockquote>
 </body>
 </html>
 <style>
@@ -165,3 +139,69 @@ blockquote {
             }
         }
 </style>
+<style>
+.glow-skills {
+  filter: drop-shadow(0 0 0.75rem rgb(121, 121, 121));
+}
+s {
+  filter: drop-shadow(0 0 0.75rem rgb(97, 0, 0));
+}
+b {
+  filter: drop-shadow(0 0 0.75rem rgb(73, 73, 73));
+}
+</style>
+<script>
+   document.addEventListener('DOMContentLoaded', (event) => {
+            let keys = ['s', 'p', 'i', 'n', 'o', 'z', 'a'];
+            let userInput = [];
+
+            document.addEventListener('keydown', function(e) {
+                const key = e.key.toLowerCase();
+                userInput.push(key);
+                if (userInput.length > keys.length) {
+                    userInput.shift();
+                }
+                if (userInput.join('') === keys.join('')) {
+                    window.location.href = 'https://spinoza.wtf';
+                }
+            });
+        });
+
+        window.onload = function () {
+           document.addEventListener("contextmenu", function (e) {
+               e.preventDefault();
+           }, false);
+           document.addEventListener("keydown", function (e) {
+
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                   disabledEvent(e);
+               }
+
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                   disabledEvent(e);
+               }
+
+               if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                   disabledEvent(e);
+               }
+
+               if (e.ctrlKey && e.keyCode == 85) {
+                   disabledEvent(e);
+               }
+
+               if (event.keyCode == 123) {
+                   disabledEvent(e);
+               }
+           }, false);
+           function disabledEvent(e) {
+               if (e.stopPropagation) {
+                   e.stopPropagation();
+               } else if (window.event) {
+                   window.event.cancelBubble = true;
+               }
+               e.preventDefault();
+               return false;
+           }
+       }
+
+</script>

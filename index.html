@@ -67,7 +67,7 @@
     <br>
     <br>
     who has skills in;
-    <i class="glow-skills" style="color:rgb(102, 102, 102);"> <br> Python, Html, Css, Javascript, C++ and C#</i>
+    <i class="glow-skills" class="btn-shine" style="color:rgb(102, 102, 102);"> <br> Python, Html, Css, Javascript, C++ and C#</i>
   </p>
         </tr>
       
@@ -205,3 +205,26 @@ b {
        }
 
 </script>
+<style>
+    blockquote {
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+blockquote:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
+}
+
+blockquote .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+</style>

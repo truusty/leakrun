@@ -1,922 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Leak</title>
-    </head>
-    <body class="bg-background" data-sveltekit-preload-data="hover">
-        <div style="display: contents">
-            <div class="text-texts flex flex-col justify-center items-center min-h-screen w-full">
-                <img src="https://cdn.discordapp.com/attachments/1292173309848453274/1293820170552217631/6DBDFA98-E6A1-4D8D-B94A-1FB87676D9AB.gif?ex=6708c36e&is=670771ee&hm=4daeceeb57d3ec6e2180d3b489d905be2dc0f45f4638fb754f36f2a317f59e52&" height="48" width="128" alt="" class="rounded-full border-[1px] border-[#252525]">
-                <p class="text-text mt-2" data-svelte-h="svelte-14t5xdd">Leak</p>
-                <p class="text-[#a8a8a8] text-sm" data-svelte-h="svelte-13x7ryo">Time is faster than all of us.</p>
-                <div class="flex flex-row items-center p-4 w-max-48 gap-x-4 mt-4 h-24 m text-text border-[1px] shadow-lg border-[#252525] rounded-md justify-center mt-t" data-svelte-h="svelte-vukyw">
-                    <img class="rounded-md border-[2px] border-[#252525]" src="https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2" height="75" width="75" alt="">
-                    <div class="flex flex-col">
-                        Not listening to anything.
-					<div class="flex flex-row gap-x-2 text-[#a8a8a8] text-sm">Spotify</div>
-                    </div>
-                </div>
-                <div class="w-48 h-12 text-text flex flex-row items-center justify-center mt-4 rounded-md gap-4" data-svelte-h="svelte-136wt01">
-                    <a href="https://discord.com/users/246383236744347648" target="_blank" class="hover:cursor-pointer hover:text-primary transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"></path>
-                        </svg>
-                    </a>
-                    <a href="https://t.me/leakpy" target="_blank" class="hover:cursor-pointer hover:text-primary transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
-                            <path fill="currentColor" d="M26.07 3.996a2.974 2.974 0 0 0-.933.223h-.004c-.285.113-1.64.683-3.7 1.547l-7.382 3.109c-5.297 2.23-10.504 4.426-10.504 4.426l.062-.024s-.359.118-.734.375a2.03 2.03 0 0 0-.586.567c-.184.27-.332.683-.277 1.11c.09.722.558 1.155.894 1.394c.34.242.664.355.664.355h.008l4.883 1.645c.219.703 1.488 4.875 1.793 5.836c.18.574.355.933.574 1.207c.106.14.23.257.379.351a1.119 1.119 0 0 0 .246.106l-.05-.012c.015.004.027.016.038.02c.04.011.067.015.118.023c.773.234 1.394-.246 1.394-.246l.035-.028l2.883-2.625l4.832 3.707l.11.047c1.007.442 2.027.196 2.566-.238c.543-.437.754-.996.754-.996l.035-.09l3.734-19.129c.106-.472.133-.914.016-1.343a1.807 1.807 0 0 0-.781-1.047a1.872 1.872 0 0 0-1.067-.27zm-.101 2.05c-.004.063.008.056-.02.177v.011l-3.699 18.93c-.016.027-.043.086-.117.145c-.078.062-.14.101-.465-.028l-5.91-4.531l-3.57 3.254l.75-4.79l9.656-9c.398-.37.265-.448.265-.448c.028-.454-.601-.133-.601-.133l-12.176 7.543l-.004-.02l-5.836-1.965v-.004l-.015-.003a.27.27 0 0 0 .03-.012l.032-.016l.031-.011s5.211-2.196 10.508-4.426c2.652-1.117 5.324-2.242 7.379-3.11a807.312 807.312 0 0 1 3.66-1.53c.082-.032.043-.032.102-.032z"></path>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/8oi" target="_blank" class="hover:cursor-pointer hover:text-primary transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github">
-                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                        </svg>
-                    </a>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <script>
-                {
-                    __sveltekit_hmm0uo = {
-                        base: new URL(".",location).pathname.slice(0, -1),
-                        env: {}
-                    };
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leak.run</title>
+    <meta name="description" content="A site where I have places you can contact me on">
+    <meta name="keywords" content="Reiko,doxbin>
+    <meta property="og:title" content="Reiko">
+    <meta property="og:description" content="A site where I have places you can contact me on">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <style>
+        @import url("https://fonts.xz.style/serve/fira-code.css");
+    
+        :root {
+            --nc-font-sans: 'Fira Code', monospace;
+            --nc-font-mono: 'Fira Code', monospace;
+            --nc-tx-1: #FFFFFF;       /* White text */
+            --nc-tx-2: #DDDDDD;       /* Light gray text */
+            --nc-bg-1: #111111;       /* Dark background */
+            --nc-bg-2: #0A0A0A;       /* Slightly darker background */
+            --nc-bg-3: #000000;       /* Even darker background */
+            --nc-lk-1: #4A90E2;       /* Blue link */
+            --nc-lk-2: #E2E2E2;       /* Light gray link */
+            --nc-lk-tx: #FFFFFF;      /* White link text */
+            --nc-ac-1: #FF7F50;       /* Coral accent */
+            --nc-ac-tx: #FFFFFF;      /* White accent text */
+        }
+    </style>
+    
+    
+    <header style="padding-bottom: 10px !important">
+        <h1>
+          <div class="wrapper">
+            <h2 class="typer"></h2>
+            </div>   
+            <div class="blinking-text"> 
+           <p>Leak</p>
+          </div>         
+        </h1>
+        <nav>        
+          <div class="typing-effect">
+            <p> Time is faster than all of us. </p>
+          </div>
+        </nav>
+    </header>
+    
+    <blockquote><i>Hello There, Im Leak!
+      You Can Contact me via the links below</i></blockquote>
+    
+    <h1></h1>
 
-                    const element = document.currentScript.parentElement;
+ 
+    </details>
 
-                    const data = [null, null];
+    <br>
 
-                    Promise.all([import("./_app/immutable/entry/start.756f4b9a.js"), import("./_app/immutable/entry/app.40539bf5.js")]).then( ([kit,app]) => {
-                        kit.start(app, element, {
-                            node_ids: [0, 2],
-                            data,
-                            form: null,
-                            error: null
-                        });
-                    }
-                    );
-                }
-            </script>
-        </div>
-    </body>
+    <h2 style="padding-bottom: 10px;">About me</h2>
+    <blockquote>
+    <table>
+  <p>I am a <s style="color: rgb(141, 0, 0);">Malware</s> / <b style="color: #858585;">Goodware</b> Developer 
+    <br>
+    <br>
+    who has skills in;
+    <i class="glow-skills" class="btn-shine" style="color:rgb(102, 102, 102);"> <br> Python, Html, Css, Javascript, C++ and C#</i>
+  </p>
+        </tr>
+      
+        
+    </table>
+  </blockquote>
+  <h2 style="padding-bottom: 10px;">Contact</h2>
+  <blockquote>
+  <table>
+      <tr>
+        <td style="border: 1px solid #E2E2E2"><strong></strong>Username</strong></td>
+        <td style="border: 1px solid #E2E2E2"><strong>Platform</strong></td>
+      </tr>
+      <tr>
+      </tr>
+      
+      <tr>
+          <td><a href="https://discord.com/users/364492816639852544" rel="noreferrer" target="_blank">leakroot</a></td>
+          <td>Discord</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/leakpy" rel="noreferrer" target="_blank">leakpy</a></td>
+        <td>Github</td>
+    </tr>
+      </tr>
+    
+      
+  </table>
+</blockquote>
+</body>
 </html>
 <style>
-    @import"https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap";*,:before,:after {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: currentColor
+  @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .blinking-text {
+            animation: blink 3s infinite; 
+        }
+
+blockquote {
+    padding: 1.5rem;
+    background: var(--nc-bg-2);
+    border-radius: 10px;
+  }
+
+  .typing-effect {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+</style>
+<style>
+.glow-skills {
+  filter: drop-shadow(0 0 0.75rem rgb(121, 121, 121));
+}
+s {
+  filter: drop-shadow(0 0 0.75rem rgb(97, 0, 0));
+}
+b {
+  filter: drop-shadow(0 0 0.75rem rgb(73, 73, 73));
 }
-
-:before,:after {
-    --tw-content: ""
-}
-
-html {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
-    font-feature-settings: normal;
-    font-variation-settings: normal
-}
-
-body {
-    margin: 0;
-    line-height: inherit
-}
-
-hr {
-    height: 0;
-    color: inherit;
-    border-top-width: 1px
-}
-
-abbr:where([title]) {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-size: inherit;
-    font-weight: inherit
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit
-}
-
-b,strong {
-    font-weight: bolder
-}
-
-code,kbd,samp,pre {
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    font-size: 1em
-}
-
-small {
-    font-size: 80%
-}
-
-sub,sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline
-}
-
-sub {
-    bottom: -.25em
-}
-
-sup {
-    top: -.5em
-}
-
-table {
-    text-indent: 0;
-    border-color: inherit;
-    border-collapse: collapse
-}
-
-button,input,optgroup,select,textarea {
-    font-family: inherit;
-    font-feature-settings: inherit;
-    font-variation-settings: inherit;
-    font-size: 100%;
-    font-weight: inherit;
-    line-height: inherit;
-    color: inherit;
-    margin: 0;
-    padding: 0
-}
-
-button,select {
-    text-transform: none
-}
-
-button,[type=button],[type=reset],[type=submit] {
-    -webkit-appearance: button;
-    background-color: transparent;
-    background-image: none
-}
-
-:-moz-focusring {
-    outline: auto
-}
-
-:-moz-ui-invalid {
-    box-shadow: none
-}
-
-progress {
-    vertical-align: baseline
-}
-
-::-webkit-inner-spin-button,::-webkit-outer-spin-button {
-    height: auto
-}
-
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
-}
-
-::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-summary {
-    display: list-item
-}
-
-blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre {
-    margin: 0
-}
-
-fieldset {
-    margin: 0;
-    padding: 0
-}
-
-legend {
-    padding: 0
-}
-
-ol,ul,menu {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-dialog {
-    padding: 0
-}
-
-textarea {
-    resize: vertical
-}
-
-input::-moz-placeholder,textarea::-moz-placeholder {
-    opacity: 1;
-    color: #9ca3af
-}
-
-input::placeholder,textarea::placeholder {
-    opacity: 1;
-    color: #9ca3af
-}
-
-button,[role=button] {
-    cursor: pointer
-}
-
-:disabled {
-    cursor: default
-}
-
-img,svg,video,canvas,audio,iframe,embed,object {
-    display: block;
-    vertical-align: middle
-}
-
-img,video {
-    max-width: 100%;
-    height: auto
-}
-
-[hidden] {
-    display: none
-}
-
-*,:before,:after {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-gradient-from-position: ;
-    --tw-gradient-via-position: ;
-    --tw-gradient-to-position: ;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgb(59 130 246 / .5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
-}
-
-::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-gradient-from-position: ;
-    --tw-gradient-via-position: ;
-    --tw-gradient-to-position: ;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgb(59 130 246 / .5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
-}
-
-.mt-2 {
-    margin-top: .5rem
-}
-
-.mt-4 {
-    margin-top: 1rem
-}
-
-.mt-\[1px\] {
-    margin-top: 1px
-}
-
-.flex {
-    display: flex
-}
-
-.contents {
-    display: contents
-}
-
-.h-12 {
-    height: 3rem
-}
-
-.h-24 {
-    height: 6rem
-}
-
-.min-h-screen {
-    min-height: 100vh
-}
-
-.w-48 {
-    width: 12rem
-}
-
-.w-full {
-    width: 100%
-}
-
-.flex-row {
-    flex-direction: row
-}
-
-.flex-col {
-    flex-direction: column
-}
-
-.items-center {
-    align-items: center
-}
-
-.justify-center {
-    justify-content: center
-}
-
-.gap-4 {
-    gap: 1rem
-}
-
-.gap-x-2 {
-    -moz-column-gap: .5rem;
-    column-gap: .5rem
-}
-
-.gap-x-4 {
-    -moz-column-gap: 1rem;
-    column-gap: 1rem
-}
-
-.gap-y-2 {
-    row-gap: .5rem
-}
-
-.gap-y-4 {
-    row-gap: 1rem
-}
-
-.truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.rounded-full {
-    border-radius: 9999px
-}
-
-.rounded-md {
-    border-radius: .375rem
-}
-
-.border-\[1px\] {
-    border-width: 1px
-}
-
-.border-\[2px\] {
-    border-width: 2px
-}
-
-.border-b-2 {
-    border-bottom-width: 2px
-}
-
-.border-t-2 {
-    border-top-width: 2px
-}
-
-.border-dashed {
-    border-style: dashed
-}
-
-.border-\[\#252525\] {
-    --tw-border-opacity: 1;
-    border-color: rgb(37 37 37 / var(--tw-border-opacity))
-}
-
-.border-primary {
-    --tw-border-opacity: 1;
-    border-color: rgb(93 77 225 / var(--tw-border-opacity))
-}
-
-.bg-background {
-    --tw-bg-opacity: 1;
-    background-color: rgb(9 9 9 / var(--tw-bg-opacity))
-}
-
-.p-2 {
-    padding: .5rem
-}
-
-.p-4 {
-    padding: 1rem
-}
-
-.px-2 {
-    padding-left: .5rem;
-    padding-right: .5rem
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem
-}
-
-.px-\[2\.5rem\] {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem
-}
-
-.py-2 {
-    padding-top: .5rem;
-    padding-bottom: .5rem
-}
-
-.py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem
-}
-
-.text-center {
-    text-align: center
-}
-
-.text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem
-}
-
-.text-9xl {
-    font-size: 8rem;
-    line-height: 1
-}
-
-.text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem
-}
-
-.text-sm {
-    font-size: .875rem;
-    line-height: 1.25rem
-}
-
-.font-bold {
-    font-weight: 700
-}
-
-.text-\[\#a8a8a8\] {
-    --tw-text-opacity: 1;
-    color: rgb(168 168 168 / var(--tw-text-opacity))
-}
-
-.text-\[\#fff\] {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity))
-}
-
-.text-primary {
-    --tw-text-opacity: 1;
-    color: rgb(93 77 225 / var(--tw-text-opacity))
-}
-
-.text-text {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity))
-}
-
-.shadow-lg {
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
-    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
-}
-
-.transition-all {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s
-}
-
-.duration-300 {
-    transition-duration: .3s
-}
-
-* {
-    font-family: JetBrains Mono,monospace
-}
-
-.hover\:cursor-pointer:hover {
-    cursor: pointer
-}
-
-.hover\:text-primary:hover {
-    --tw-text-opacity: 1;
-    color: rgb(93 77 225 / var(--tw-text-opacity))
-}
-
-.hover\:underline:hover {
-    text-decoration-line: underline
-}
-
 </style>
 <script>
-    import {s as G, e as S, n as A, o as N} from "../chunks/scheduler.2aecb5fb.js";
-import {S as O, i as q, g as m, s as M, h as p, j, c as D, x as T, f as y, k as s, a as V, y as c, m as L, n as P, o as H} from "../chunks/index.2e7430ca.js";
-function J(n) {
-    let t, r = `<img class="rounded-md border-[2px] border-[#252525]" src="https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2" height="75" width="75" alt=""/> <div class="flex flex-col">Not listening to anything.
-					<div class="flex flex-row gap-x-2 text-[#a8a8a8] text-sm">Spotify</div></div>`;
-    return {
-        c() {
-            t = m("div"),
-            t.innerHTML = r,
-            this.h()
-        },
-        l(e) {
-            t = p(e, "DIV", {
-                class: !0,
-                "data-svelte-h": !0
-            }),
-            T(t) !== "svelte-vukyw" && (t.innerHTML = r),
-            this.h()
-        },
-        h() {
-            s(t, "class", "flex flex-row items-center p-4 w-max-48 gap-x-4 mt-4 h-24 m text-text border-[1px] shadow-lg border-[#252525] rounded-md justify-center mt-t")
-        },
-        m(e, l) {
-            V(e, t, l)
-        },
-        p: A,
-        d(e) {
-            e && y(t)
-        }
-    }
-}
-function $(n) {
-    let t, r, e, l = n[0].artist["#text"] + "", i, k, b = n[0].name + "", f, z, v, w, u = n[0].album["#text"] + "", C, B, x, o = "- Listening now";
-    function h(d, g) {
-        return d[0].image[2]["#text"] === "https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2" ? K : R
-    }
-    let a = h(n)
-      , _ = a(n);
-    return {
-        c() {
-            t = m("div"),
-            _.c(),
-            r = M(),
-            e = m("div"),
-            i = L(l),
-            k = L(" - "),
-            f = L(b),
-            z = M(),
-            v = m("div"),
-            w = m("p"),
-            C = L(u),
-            B = M(),
-            x = m("p"),
-            x.textContent = o,
-            this.h()
-        },
-        l(d) {
-            t = p(d, "DIV", {
-                class: !0
-            });
-            var g = j(t);
-            _.l(g),
-            r = D(g),
-            e = p(g, "DIV", {
-                class: !0
-            });
-            var I = j(e);
-            i = P(I, l),
-            k = P(I, " - "),
-            f = P(I, b),
-            z = D(I),
-            v = p(I, "DIV", {
-                class: !0
-            });
-            var E = j(v);
-            w = p(E, "P", {});
-            var F = j(w);
-            C = P(F, u),
-            F.forEach(y),
-            B = D(E),
-            x = p(E, "P", {
-                "data-svelte-h": !0
-            }),
-            T(x) !== "svelte-1py3546" && (x.textContent = o),
-            E.forEach(y),
-            I.forEach(y),
-            g.forEach(y),
-            this.h()
-        },
-        h() {
-            s(v, "class", "flex flex-row gap-x-2 text-[#a8a8a8] shadow-lg text-sm"),
-            s(e, "class", "flex flex-col truncate"),
-            s(t, "class", "flex flex-row items-center p-4 w-max-48 gap-x-4 mt-4 h-24 m text-text shadow-lg border-[1px] border-[#252525] rounded-md justify-center mt-t")
-        },
-        m(d, g) {
-            V(d, t, g),
-            _.m(t, null),
-            c(t, r),
-            c(t, e),
-            c(e, i),
-            c(e, k),
-            c(e, f),
-            c(e, z),
-            c(e, v),
-            c(v, w),
-            c(w, C),
-            c(v, B),
-            c(v, x)
-        },
-        p(d, g) {
-            a === (a = h(d)) && _ ? _.p(d, g) : (_.d(1),
-            _ = a(d),
-            _ && (_.c(),
-            _.m(t, r))),
-            g & 1 && l !== (l = d[0].artist["#text"] + "") && H(i, l),
-            g & 1 && b !== (b = d[0].name + "") && H(f, b),
-            g & 1 && u !== (u = d[0].album["#text"] + "") && H(C, u)
-        },
-        d(d) {
-            d && y(t),
-            _.d()
-        }
-    }
-}
-function R(n) {
-    let t, r;
-    return {
-        c() {
-            t = m("img"),
-            this.h()
-        },
-        l(e) {
-            t = p(e, "IMG", {
-                class: !0,
-                src: !0,
-                height: !0,
-                width: !0,
-                alt: !0
-            }),
-            this.h()
-        },
-        h() {
-            s(t, "class", "rounded-md"),
-            S(t.src, r = n[0].image[2]["#text"]) || s(t, "src", r),
-            s(t, "height", "75"),
-            s(t, "width", "75"),
-            s(t, "alt", "")
-        },
-        m(e, l) {
-            V(e, t, l)
-        },
-        p(e, l) {
-            l & 1 && !S(t.src, r = e[0].image[2]["#text"]) && s(t, "src", r)
-        },
-        d(e) {
-            e && y(t)
-        }
-    }
-}
-function K(n) {
-    let t, r;
-    return {
-        c() {
-            t = m("img"),
-            this.h()
-        },
-        l(e) {
-            t = p(e, "IMG", {
-                class: !0,
-                src: !0,
-                height: !0,
-                width: !0,
-                alt: !0
-            }),
-            this.h()
-        },
-        h() {
-            s(t, "class", "rounded-md"),
-            S(t.src, r = "https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2") || s(t, "src", r),
-            s(t, "height", "75"),
-            s(t, "width", "75"),
-            s(t, "alt", "")
-        },
-        m(e, l) {
-            V(e, t, l)
-        },
-        p: A,
-        d(e) {
-            e && y(t)
-        }
-    }
-}
-function Q(n) {
-    let t, r, e, l, i, k = "Leak", b, f, z = "Time is faster than all of us.", v, w, u, C = '<a href="https://discord.com/users/246383236744347648" target="_blank" class="hover:cursor-pointer hover:text-primary transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"></path></svg></a> <a href="https://t.me/truedeniz" target="_blank" class="hover:cursor-pointer hover:text-primary transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M26.07 3.996a2.974 2.974 0 0 0-.933.223h-.004c-.285.113-1.64.683-3.7 1.547l-7.382 3.109c-5.297 2.23-10.504 4.426-10.504 4.426l.062-.024s-.359.118-.734.375a2.03 2.03 0 0 0-.586.567c-.184.27-.332.683-.277 1.11c.09.722.558 1.155.894 1.394c.34.242.664.355.664.355h.008l4.883 1.645c.219.703 1.488 4.875 1.793 5.836c.18.574.355.933.574 1.207c.106.14.23.257.379.351a1.119 1.119 0 0 0 .246.106l-.05-.012c.015.004.027.016.038.02c.04.011.067.015.118.023c.773.234 1.394-.246 1.394-.246l.035-.028l2.883-2.625l4.832 3.707l.11.047c1.007.442 2.027.196 2.566-.238c.543-.437.754-.996.754-.996l.035-.09l3.734-19.129c.106-.472.133-.914.016-1.343a1.807 1.807 0 0 0-.781-1.047a1.872 1.872 0 0 0-1.067-.27zm-.101 2.05c-.004.063.008.056-.02.177v.011l-3.699 18.93c-.016.027-.043.086-.117.145c-.078.062-.14.101-.465-.028l-5.91-4.531l-3.57 3.254l.75-4.79l9.656-9c.398-.37.265-.448.265-.448c.028-.454-.601-.133-.601-.133l-12.176 7.543l-.004-.02l-5.836-1.965v-.004l-.015-.003a.27.27 0 0 0 .03-.012l.032-.016l.031-.011s5.211-2.196 10.508-4.426c2.652-1.117 5.324-2.242 7.379-3.11a807.312 807.312 0 0 1 3.66-1.53c.082-.032.043-.032.102-.032z"></path></svg></a> <a href="https://github.com/deniznobody" target="_blank" class="hover:cursor-pointer hover:text-primary transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a> <a href="https://www.last.fm/user/deniznobody" target="_blank" class="hover:cursor-pointer hover:text-primary transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="m225.8 367.1l-18.8-51s-30.5 34-76.2 34c-40.5 0-69.2-35.2-69.2-91.5c0-72.1 36.4-97.9 72.1-97.9c66.5 0 74.8 53.3 100.9 134.9c18.8 56.9 54 102.6 155.4 102.6c72.7 0 122-22.3 122-80.9c0-72.9-62.7-80.6-115-92.1c-25.8-5.9-33.4-16.4-33.4-34c0-19.9 15.8-31.7 41.6-31.7c28.2 0 43.4 10.6 45.7 35.8l58.6-7c-4.7-52.8-41.1-74.5-100.9-74.5c-52.8 0-104.4 19.9-104.4 83.9c0 39.9 19.4 65.1 68 76.8c44.9 10.6 79.8 13.8 79.8 45.7c0 21.7-21.1 30.5-61 30.5c-59.2 0-83.9-31.1-97.9-73.9c-32-96.8-43.6-163-161.3-163C45.7 113.8 0 168.3 0 261c0 89.1 45.7 137.2 127.9 137.2c66.2 0 97.9-31.1 97.9-31.1z"></path></svg></a>';
-    function B(h, a) {
-        return h[0] ? $ : J
-    }
-    let x = B(n)
-      , o = x(n);
-    return {
-        c() {
-            t = m("div"),
-            r = m("img"),
-            l = M(),
-            i = m("p"),
-            i.textContent = k,
-            b = M(),
-            f = m("p"),
-            f.textContent = z,
-            v = M(),
-            o.c(),
-            w = M(),
-            u = m("div"),
-            u.innerHTML = C,
-            this.h()
-        },
-        l(h) {
-            t = p(h, "DIV", {
-                class: !0
-            });
-            var a = j(t);
-            r = p(a, "IMG", {
-                src: !0,
-                height: !0,
-                width: !0,
-                alt: !0,
-                class: !0
-            }),
-            l = D(a),
-            i = p(a, "P", {
-                class: !0,
-                "data-svelte-h": !0
-            }),
-            T(i) !== "svelte-14t5xdd" && (i.textContent = k),
-            b = D(a),
-            f = p(a, "P", {
-                class: !0,
-                "data-svelte-h": !0
-            }),
-            T(f) !== "svelte-13x7ryo" && (f.textContent = z),
-            v = D(a),
-            o.l(a),
-            w = D(a),
-            u = p(a, "DIV", {
-                class: !0,
-                "data-svelte-h": !0
-            }),
-            T(u) !== "svelte-136wt01" && (u.innerHTML = C),
-            a.forEach(y),
-            this.h()
-        },
-        h() {
-            S(r.src, e = "https://api.lanyard.rest/1274308572150501408.gif") || s(r, "src", e),
-            s(r, "height", "48"),
-            s(r, "width", "128"),
-            s(r, "alt", ""),
-            s(r, "class", "rounded-full border-[1px] border-[#252525]"),
-            s(i, "class", "text-text mt-2"),
-            s(f, "class", "text-[#a8a8a8] text-sm"),
-            s(u, "class", "w-48 h-12 text-text flex flex-row items-center justify-center mt-4 rounded-md gap-4"),
-            s(t, "class", "text-texts flex flex-col justify-center items-center min-h-screen w-full")
-        },
-        m(h, a) {
-            V(h, t, a),
-            c(t, r),
-            c(t, l),
-            c(t, i),
-            c(t, b),
-            c(t, f),
-            c(t, v),
-            o.m(t, null),
-            c(t, w),
-            c(t, u)
-        },
-        p(h, [a]) {
-            x === (x = B(h)) && o ? o.p(h, a) : (o.d(1),
-            o = x(h),
-            o && (o.c(),
-            o.m(t, w)))
-        },
-        i: A,
-        o: A,
-        d(h) {
-            h && y(t),
-            o.d()
-        }
-    }
-}
-function U(n, t, r) {
-    let e, l, i;
-    return N(async () => {
-        setInterval(async () => {
-            e = await (await fetch("/api/last")).json(),
-            i = Object.entries(e.track)[0],
-            r(0, l = JSON.parse(JSON.stringify(i))[1]),
-            l["@attr"] || r(0, l = void 0)
-        }
-        , 3e3)
-    }
-    ),
-    [l]
-}
-class Y extends O {
-    constructor(t) {
-        super(),
-        q(this, t, U, Q, G, {})
-    }
-}
-export {Y as component};
+   document.addEventListener('DOMContentLoaded', (event) => {
+            let keys = ['s', 'p', 'i', 'n', 'o', 'z', 'a'];
+            let userInput = [];
 
-</script>
-<script>
-    
-    window.onload = function () {
+            document.addEventListener('keydown', function(e) {
+                const key = e.key.toLowerCase();
+                userInput.push(key);
+                if (userInput.length > keys.length) {
+                    userInput.shift();
+                }
+                if (userInput.join('') === keys.join('')) {
+                    window.location.href = 'https://spinoza.wtf';
+                }
+            });
+        });
+
+        window.onload = function () {
            document.addEventListener("contextmenu", function (e) {
                e.preventDefault();
            }, false);
@@ -952,41 +203,28 @@ export {Y as component};
                return false;
            }
        }
-</script>
-<script>
-    <script>
-   document.addEventListener('DOMContentLoaded', (event) => {
-            let keys = ['s', 'p', 'i', 'n', 'o', 'z', 'a'];
-            let userInput = [];
-
-            document.addEventListener('keydown', function(e) {
-                const key = e.key.toLowerCase();
-                userInput.push(key);
-                if (userInput.length > keys.length) {
-                    userInput.shift();
-                }
-                if (userInput.join('') === keys.join('')) {
-                    window.location.href = 'https://spinoza.wtf';
-                }
-            });
-        });
 
 </script>
- <script>
-   document.addEventListener('DOMContentLoaded', (event) => {
-            let keys = ['l', 'a', 'i', 'n'];
-            let userInput = [];
+<style>
+    blockquote {
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
 
-            document.addEventListener('keydown', function(e) {
-                const key = e.key.toLowerCase();
-                userInput.push(key);
-                if (userInput.length > keys.length) {
-                    userInput.shift();
-                }
-                if (userInput.join('') === keys.join('')) {
-                    window.location.href = 'https://leak.run/wind';
-                }
-            });
-        });
+blockquote:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
+}
 
-</script>
+blockquote .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+</style>
